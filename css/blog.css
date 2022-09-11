@@ -225,6 +225,9 @@ body {
   line-height: 32px;
   color: #000000;
 }
+.flex-container .flex-item-left p:nth-of-type(2):hover {
+  color: #43BA7F;
+}
 .flex-container .flex-item-left .product-img img {
   max-width: 100%;
 }
@@ -241,6 +244,9 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #000000;
+}
+.flex-container .flex-item-right p:nth-of-type(2):hover {
+  color: #43BA7F;
 }
 .flex-container .flex-item-right .product-img img {
   max-width: 100%;

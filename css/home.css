@@ -816,6 +816,9 @@ h3 {
   line-height: 20px;
   color: #8B8B8B;
 }
+.blog-container .blog-flex-container .blog-1:hover, .blog-container .blog-flex-container .blog-2:hover {
+  color: #43BA7F;
+}
 .blog-container .blog-flex-container .blog-1 {
   flex: 50%;
 }
@@ -835,7 +838,6 @@ h3 {
 .blog-container .blog-flex-container .blog-2 p:nth-of-type(2) {
   font-size: 24px;
   line-height: 32px;
-  color: #43BA7F;
 }
 
 @media only screen and (max-width: 425px) {
@@ -918,9 +920,6 @@ h3 {
 .footer-container .footer-grid-container .footer-2 p:hover {
   color: #43BA7F;
   cursor: pointer;
-}
-.footer-container .footer-grid-container .footer-2 .footer-nav-1 p:nth-of-type(2) {
-  color: #43BA7F;
 }
 .footer-container .footer-grid-container .footer-3 {
   font-size: 16px;
@@ -1019,9 +1018,6 @@ h3 {
 .footer-container .footer-grid-container .footer-2 p:hover {
   color: #43BA7F;
   cursor: pointer;
-}
-.footer-container .footer-grid-container .footer-2 .footer-nav-1 p:nth-of-type(2) {
-  color: #43BA7F;
 }
 .footer-container .footer-grid-container .footer-3 {
   font-size: 16px;
