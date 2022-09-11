@@ -1,0 +1,46 @@
+// contact way starts
+.contact-way-container {
+    background-color: #FAF4E7;
+    border: 1px solid transparent;
+
+    .contact-way {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        // border: 1px solid;
+        margin-top: 70px;
+        margin-bottom: 80px;
+        img {
+            margin-bottom: 27px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            color: #02172C;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .contact-way-container {
+        .contact-way {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+
+            img {
+                margin-bottom: 24px;
+            }
+            .contact-1 {
+                p:nth-of-type(2) {
+                    margin-bottom: 56px;
+                }
+            }
+            .contact-2 {
+                p {
+                    margin-bottom: 56px;
+                }
+            }
+        }
+    }
+}
+// contact way ends

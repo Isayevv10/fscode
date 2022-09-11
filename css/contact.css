@@ -1,0 +1,445 @@
+@import url("http://fonts.cdnfonts.com/css/euclid-circular-a?styles=100037,100034,100036,100039,100031");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+.nav-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.nav-flex-container .nav-left {
+  flex: 50%;
+  margin-top: 24px;
+}
+.nav-flex-container .nav-right {
+  flex: 50%;
+  margin-top: 38px;
+}
+.nav-flex-container .nav-right ul {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-flex-container .nav-right ul li {
+  list-style-type: none;
+}
+.nav-flex-container .nav-right ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343434;
+}
+.nav-flex-container .nav-right ul li .last-a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  padding: 15px 32px;
+  background: #43BA7F;
+  border-radius: 24px;
+}
+
+.nav-flex-container-2 {
+  display: none;
+}
+.nav-flex-container-2 .nav-left-res {
+  flex: 50%;
+  margin-top: 20px;
+}
+.nav-flex-container-2 .nav-right-res {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-flex-container-2 .nav-right-res .nav-item-1 ul {
+  margin-top: 30px;
+}
+.nav-flex-container-2 .nav-right-res .nav-item-1 ul li {
+  list-style-type: none;
+}
+.nav-flex-container-2 .nav-right-res .nav-item-1 ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  padding: 11px 28px;
+  background: #43BA7F;
+  border-radius: 24px;
+}
+.nav-flex-container-2 .nav-right-res .nav-item-2 {
+  margin-top: 30px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-flex-container {
+    display: none;
+  }
+  .nav-flex-container-2 {
+    display: flex;
+  }
+}
+.hidden {
+  visibility: hidden;
+  transform: translate(-350px, 0);
+}
+
+.menu {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  transition: transform 1.1s ease-out;
+}
+.menu .side-menu {
+  background-color: #FAF4E7;
+  height: 100%;
+  width: 60vw;
+  border: 1px solid transparent;
+}
+.menu .side-menu div:nth-of-type(1) {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+.menu .side-menu div:nth-of-type(2) {
+  text-align: center;
+}
+.menu .side-menu div:nth-of-type(2) p:nth-of-type(2) {
+  margin: 40px 0;
+}
+.menu .side-menu div:nth-of-type(2) p:nth-of-type(3) {
+  margin-bottom: 40px;
+}
+.menu .side-menu div:nth-of-type(2) a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: #343434;
+  cursor: pointer;
+}
+.menu .side-menu div:nth-of-type(3) {
+  text-align: center;
+  margin-top: 80px;
+}
+.menu .side-menu div:nth-of-type(3) button {
+  border: none;
+  outline: none;
+}
+.menu .side-menu div:nth-of-type(3) button a {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  padding: 14px 70px;
+  background: #43BA7F;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.contact-container {
+  border: 1px solid transparent;
+  background-color: #FAF4E7;
+}
+.contact-container .contact {
+  margin-top: 45px;
+  border-bottom: 1px solid #CCD1D5;
+}
+.contact-container .contact div:nth-of-type(1) {
+  text-align: center;
+  font-size: 34px;
+  line-height: 43px;
+  text-align: center;
+  color: #000000;
+}
+.contact-container .contact div:nth-of-type(2) {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #343434;
+}
+.contact-container .contact div:nth-of-type(3) p:nth-child(1) {
+  font-size: 20px;
+  line-height: 32px;
+  color: #677480;
+}
+.contact-container .contact div:nth-of-type(3) p:nth-child(2) {
+  font-size: 34px;
+  line-height: 43px;
+  color: #212121;
+}
+.contact-container .contact form input {
+  border: none;
+  border-bottom: 1px solid #9AA2AB;
+  background-color: #FAF4E7;
+  outline: none;
+}
+.contact-container .contact form input::-moz-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FF8145;
+  opacity: 0.4;
+}
+.contact-container .contact form input:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FF8145;
+  opacity: 0.4;
+}
+.contact-container .contact form input::placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FF8145;
+  opacity: 0.4;
+}
+.contact-container .contact form input:nth-of-type(1), .contact-container .contact form input:nth-of-type(2) {
+  margin-right: 56px;
+}
+.contact-container .contact form input:nth-of-type(1) {
+  margin-bottom: 60px;
+}
+.contact-container .contact form select {
+  border: none;
+  border-bottom: 1px solid #9AA2AB;
+  outline: none;
+  background-color: #FAF4E7;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FF8145;
+  opacity: 0.4;
+  margin-bottom: 60px;
+}
+.contact-container .contact form label {
+  font-size: 24px;
+  line-height: 30px;
+  color: #212121;
+  margin-right: 24px;
+}
+.contact-container .contact form .checkbox-label {
+  font-size: 20px;
+  line-height: 25px;
+  color: #354556;
+  margin-bottom: 63px;
+  margin-top: 104px;
+}
+.contact-container .contact form button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background: #43BA7F;
+  border-radius: 24px;
+  color: #fff;
+  padding: 15px 32px;
+  outline: none;
+  border: 1px solid;
+  margin-bottom: 104px;
+}
+
+@media screen and (max-width: 425px) {
+  .contact-container .contact {
+    margin-top: 30px;
+  }
+  .contact-container .contact div:nth-of-type(1) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contact-container .contact div:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact-container .contact div:nth-of-type(3) p:nth-child(1) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact-container .contact div:nth-of-type(3) p:nth-child(2) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contact-container .contact form input {
+    width: 100%;
+    margin-bottom: 40px !important;
+  }
+  .contact-container .contact form input:nth-of-type(n) {
+    margin-right: 0;
+  }
+  .contact-container .contact form input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-container .contact form input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-container .contact form input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-container .contact form .checkbox-input {
+    width: auto;
+  }
+  .contact-container .contact form label {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 0;
+  }
+  .contact-container .contact form .checkbox-label {
+    margin-top: 54px;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-container .contact form select {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-container .contact form button {
+    width: 100%;
+  }
+}
+.contact-way-container {
+  background-color: #FAF4E7;
+  border: 1px solid transparent;
+}
+.contact-way-container .contact-way {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.contact-way-container .contact-way img {
+  margin-bottom: 27px;
+}
+.contact-way-container .contact-way p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #02172C;
+}
+
+@media screen and (max-width: 425px) {
+  .contact-way-container .contact-way {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .contact-way-container .contact-way img {
+    margin-bottom: 24px;
+  }
+  .contact-way-container .contact-way .contact-1 p:nth-of-type(2) {
+    margin-bottom: 56px;
+  }
+  .contact-way-container .contact-way .contact-2 p {
+    margin-bottom: 56px;
+  }
+}
+.footer-container {
+  background-color: #0D1118;
+  color: #fff;
+}
+.footer-container .footer-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  padding: 58px 0 100px 0;
+}
+.footer-container .footer-grid-container .footer-1-res, .footer-container .footer-grid-container .footer-4 {
+  display: none;
+}
+.footer-container .footer-grid-container .footer-1 {
+  color: #3D4045;
+  font-size: 16px;
+}
+.footer-container .footer-grid-container .footer-1 p {
+  margin: 34px 0 38px 0;
+}
+.footer-container .footer-grid-container .footer-1 .footer-icons img:nth-child(2) {
+  margin: 0 16px;
+}
+.footer-container .footer-grid-container .footer-1 .footer-icons img:nth-child(3) {
+  margin-right: 16px;
+}
+.footer-container .footer-grid-container .footer-2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6E7581;
+  margin-right: 90px;
+}
+.footer-container .footer-grid-container .footer-2 p:hover {
+  color: #43BA7F;
+  cursor: pointer;
+}
+.footer-container .footer-grid-container .footer-3 {
+  font-size: 16px;
+  color: #6E7581;
+}
+.footer-container .footer-grid-container .footer-3 div:nth-of-type(1) {
+  margin-bottom: 32px;
+  display: flex;
+}
+.footer-container .footer-grid-container .footer-3 div:nth-of-type(1) input {
+  background-color: #FBF5F2;
+  border-radius: 16px;
+  height: 48px;
+  outline: none;
+  margin-right: 23px;
+  padding-left: 16px;
+}
+.footer-container .footer-grid-container .footer-3 div:nth-of-type(1) button {
+  background: #43BA7F;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 12px 15px;
+  outline: none;
+  color: #fff;
+  border: none;
+}
+.footer-container .footer-grid-container .footer-3 div:nth-of-type(2) {
+  display: flex;
+  height: 24px;
+}
+.footer-container .footer-grid-container .footer-3 div:nth-of-type(2) img {
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .footer-container .footer-grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, minmax(100%));
+    padding: 0;
+  }
+  .footer-container .footer-grid-container .footer-1 {
+    display: none;
+  }
+  .footer-container .footer-grid-container .footer-1-res, .footer-container .footer-grid-container .footer-4 {
+    display: block;
+    text-align: center;
+  }
+  .footer-container .footer-grid-container .footer-1-res {
+    margin: 40px 0 56px 0;
+  }
+  .footer-container .footer-grid-container .footer-3 {
+    margin-top: 48px;
+  }
+  .footer-container .footer-grid-container .footer-3 div:nth-of-type(1) input {
+    margin-right: 8px;
+  }
+  .footer-container .footer-grid-container .footer-4 {
+    margin: 48px 0 24px 0;
+    color: #6E7581;
+  }
+}/*# sourceMappingURL=contact.css.map */

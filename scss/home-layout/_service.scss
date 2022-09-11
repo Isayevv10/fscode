@@ -1,0 +1,93 @@
+
+// service starts
+.service-container {
+    background-color: #FBF5F2;
+    padding-top: 301px;
+    padding-bottom: 105px;
+    width: 100%;
+
+    .service-flex-container {
+        display: flex;
+        gap: 103px;
+        .service-item-1 {
+            flex:25%;
+            border-right: 1px solid #C4C4C4;
+            height: 244px;
+            p:nth-of-type(1) {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;
+                color: #43BA7F;
+            }
+            p:nth-of-type(2) {
+                font-weight: 600;
+                font-size: 34px;
+                line-height: 43px;
+                color: #212121;
+            }
+        }
+    
+        .service-item-2 {
+            flex: 75%;
+            .about-service {
+                display: flex;
+                #dif {
+                    margin-right: 44px;
+                }
+                .icon-service {
+                    margin-right: 64px;
+                }
+                h5 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #212121;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #212121;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+
+    .service-container {
+
+        .service-flex-container {
+            flex-direction: column;
+            gap: 0;
+            .service-item-1{
+                border-right: none;
+                flex: 100%;
+                text-align: center;
+            }
+            .service-item-2 {
+                margin-top: 56px;
+                flex: 100%;
+                .about-service {
+                    margin-top: 56px;
+                    text-align: center;
+                    flex-direction: column;
+
+                    .icon-service {
+                        margin: 0;
+                    }
+                    #dif {
+                        margin: 0;
+                    }
+                    h5 {
+                    margin-top: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+// service ends

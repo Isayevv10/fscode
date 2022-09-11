@@ -1,0 +1,112 @@
+// blog starts
+.blog-container {
+    margin-bottom: 110px;
+
+    .blog-caption {
+        font-size: 34px;
+        line-height: 43px;
+        text-align: center;
+        color: #212121;
+        margin-top: 104px;
+    }
+    .blog-next {
+        display: none;
+    }
+   .blog-flex-container {
+        display: flex;
+        flex-direction: row;
+        column-gap: 32px;
+        margin-top: 72px;
+        .blog-1, .blog-2 {
+
+            p:nth-of-type(1) {
+                font-size: 16px;
+                line-height: 20px;
+                color: #43BA7F;
+                margin-top: 16px;
+            }
+            small {
+                font-size: 16px;
+                line-height: 20px;
+                color: #8B8B8B;
+            }
+        }
+        .blog-1 {
+            flex: 50%;
+            .blog-img { 
+                img {
+                    max-width: 100%;   
+                }
+           }
+            p:nth-of-type(2) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        .blog-2 {
+            flex: 50%;
+           .blog-img { 
+
+                img {
+                    max-width: 100%;   
+                }
+           }
+            p:nth-of-type(2) {
+                font-size: 24px;
+                line-height: 32px;
+                color: #43BA7F;
+            }
+        }
+    } 
+}
+@media only screen and (max-width: 425px) {
+
+    .blog-container {
+
+        .blog-caption{
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 64px;
+        }
+        .blog-next {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #3878F2;
+            margin-top: 48px;
+            margin-bottom: 72px;
+        }
+        .blog-flex-container {
+            flex-direction: column;
+            margin-top: 48px;
+            .blog-1, .blog-2 {
+
+                p:nth-of-type(2) {
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #27565E;
+                }
+                p:nth-of-type(1) {
+                    margin: 16px 0;
+                }
+            }
+            .blog-1 {
+                flex: 100%;
+                img {
+                max-width: 100%;
+                border-radius: 10px;
+                }
+            }
+            .blog-2 {
+                flex: 100%;
+                margin-top: 48px;
+                img {
+                    max-width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+// blog ends

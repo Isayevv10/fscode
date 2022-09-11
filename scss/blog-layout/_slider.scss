@@ -1,0 +1,117 @@
+
+// slider starts
+.slider-container {
+    margin: 100px 0 80px 0;
+
+    .slider-grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+        justify-content:space-around;
+        width: 580px;
+        margin: 0 auto;
+        div {
+            height: 35px;
+            padding: 7px 15px;
+            color: #343434;
+            font-size: 20px;
+            line-height: 25px;
+            &:hover {
+                background: #43BA7F;
+                border-radius: 8px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+        div:nth-of-type(1), div:nth-of-type(8) {
+            background: #FFFFFF;
+            border: 1px solid #E6E8EA;
+            border-radius: 8px;
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                color: #343434;
+            }
+        }
+        div:nth-of-type(4) {
+            font-size: 20px;
+            line-height: 25px;
+            color: #FFFFFF;
+            background: #43BA7F;
+            border-radius: 8px;
+            padding-top: 5px;
+        }
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .slider-container {
+        .slider-grid-container {
+            width: 490px;
+        }
+    }
+}
+// slider ends
+
+
+
+// slider responive starts
+.slider-res-container {
+
+    .slider-res-grid-container {
+        display: none;
+        grid-template-columns: repeat(7, auto);
+        justify-content:space-around;
+        margin: 0 auto;
+
+        div {
+            height: 35px;
+            padding: 7px 15px;
+            color: #343434;
+            font-size: 20px;
+            line-height: 25px;
+            &:hover {
+                background: #43BA7F;
+                border-radius: 8px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+        div:nth-of-type(1), div:nth-of-type(7) {
+            background: #FFFFFF;
+            border: 1px solid #E6E8EA;
+            border-radius: 8px;
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                color: #343434;
+            }
+        }
+        div:nth-of-type(3) {
+            font-size: 20px;
+            line-height: 25px;
+            color: #FFFFFF;
+            background: #43BA7F;
+            border-radius: 8px;
+            padding-top: 5px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .slider-container {
+        margin: 0;
+        .slider-grid-container {
+            display: none;
+        }
+    }
+    
+    .slider-res-container {
+        margin: 70px 0;
+        .slider-res-grid-container {
+            display: grid;
+        }
+    }
+    
+}
+// slider responsive ends

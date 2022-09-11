@@ -1,0 +1,126 @@
+
+// choosing us starts
+
+.choosing-container {
+    background-color: #0D1118;  
+    color: #fff;
+
+    .choosing-grid-container {
+        display: grid;
+        grid-template-columns: 50px repeat(5, 179px);
+        column-gap: 32px;
+        color: #fff;
+
+        .choosing-1 {
+            margin: 96px 0;
+            line-height: 30px;
+            height: 320px;
+            position: relative;
+            
+            div {
+                font-size: 24px;
+                width: 262px;
+                height: 27px;
+                position: absolute;
+                bottom: 7%;
+                left: 0;
+                background: none;
+                transform-origin: 0 0;
+                transform: rotate(-90deg);
+            }
+        }
+        .chosen {
+            margin: 96px 0;
+            height: 320px;
+            position: relative;
+            border: 1px solid #343434;
+            border-radius: 8px;
+            padding-left: 22px;
+
+            p:nth-of-type(1) {
+                font-size: 24px;
+                line-height: 24px;
+                margin-top: 32px;
+            }
+            p:nth-of-type(2) {
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 40px;
+            }
+            img {
+                position: absolute;
+                top:82.5%;
+            }
+        }
+    }
+      
+}
+
+    h3 {
+        display: none;
+    }
+    .choosing-grid-container-2 {
+        display: none;
+    }
+
+
+@media screen and (max-width: 992px) {
+    .choosing-grid-container {
+        grid-template-columns: repeat(3, 179px) !important;
+        grid-template-rows: repeat(2, auto);
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+
+    .choosing-container {
+        padding-top: 48px;
+        .choosing-grid-container {
+            display: none !important; 
+        }
+       
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            display: block;
+        }
+    
+        .choosing-grid-container-2 {
+            display: grid;
+            grid-template-columns: repeat(5, 185px);
+            overflow-x:scroll;
+            background-color: #0D1118;
+            color: #fff;
+            margin-top: 48px;
+              &::-webkit-scrollbar {
+                display: none;
+              }
+        
+            .chosen-2 {
+                position: relative;
+                height: 320px;
+                padding-left: 22px;
+                margin-bottom: 48px;
+                border: 1px solid #343434;
+                border-radius: 8px;
+                margin-left: 16px;
+                margin-right: 16px;
+
+                p:nth-of-type(1) {
+                    margin-top: 32px;
+                }
+                p:nth-of-type(2) {
+                    margin-top: 40px;
+                }
+                img {
+                    position: absolute;
+                    top: 82.5%;
+                }
+            }
+        }
+    }
+}        
+// choosing us ends

@@ -1,0 +1,161 @@
+// contact starts
+.contact-container {
+    border: 1px solid transparent;
+    background-color: #FAF4E7;
+    .contact {
+        margin-top: 45px;
+        border-bottom: 1px solid #CCD1D5;
+
+        div:nth-of-type(1) {
+            text-align: center;
+             font-size: 34px;
+             line-height: 43px;
+             text-align: center;
+             color: #000000;
+        }
+        div:nth-of-type(2) {
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            color: #343434;
+        }
+        div:nth-of-type(3) {
+            p:nth-child(1) {
+                font-size: 20px;
+                line-height: 32px;
+                color: #677480;
+            }
+            p:nth-child(2) {
+                font-size: 34px;
+                line-height: 43px;
+                color: #212121;
+            }
+        }
+        form {
+            input {
+                border: none;
+                border-bottom: 1px solid #9AA2AB;
+                background-color: #FAF4E7;
+                outline: none;
+                &::placeholder {
+                    font-size: 20px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #FF8145;
+                    opacity: 0.4;
+                }
+                &:nth-of-type(1), &:nth-of-type(2) {
+                    margin-right: 56px;
+                }
+                &:nth-of-type(1) {
+                    margin-bottom: 60px;
+                }
+            }
+
+            select {
+                border: none;
+                border-bottom: 1px solid #9AA2AB;
+                outline: none;
+                background-color: #FAF4E7;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                color: #FF8145;
+                opacity: 0.4;
+                margin-bottom: 60px;
+            }
+            label {
+                font-size: 24px;
+                line-height: 30px;
+                color: #212121;
+                margin-right: 24px;
+            }
+            .checkbox-label {
+                font-size: 20px;
+                line-height: 25px;
+                color: #354556;
+                margin-bottom: 63px;
+                margin-top: 104px;
+            }
+            button {
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                background: #43BA7F;
+                border-radius: 24px;
+                color: #fff;
+                padding: 15px 32px;
+                outline: none;
+                border: 1px solid;
+                margin-bottom: 104px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:425px) {
+    .contact-container {
+
+        .contact {
+            margin-top: 30px;
+            div:nth-of-type(1) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            div:nth-of-type(2) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            div:nth-of-type(3) {
+                p:nth-child(1) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                p:nth-child(2) {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            form {
+                input {
+                    width: 100%;
+                    margin-bottom: 40px !important;
+                    &:nth-of-type(n) {
+                        margin-right: 0;
+                    }
+                    &::placeholder {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                .checkbox-input {
+                    width: auto;
+                }
+               label {
+                margin-bottom: 32px;
+                font-size: 20px;
+                line-height: 25px;
+                margin-right: 0;
+               }
+               .checkbox-label {
+                margin-top: 54px;
+                margin-top: 0;
+                font-size: 16px;
+                line-height: 20px;
+               }
+                select {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+// contact ends

@@ -1,0 +1,156 @@
+
+.nav-flex-container-2 {
+    display: none;
+}
+
+// navbar starts
+.nav-container {
+    background: linear-gradient(248.66deg, #0D1118 0%, rgba(13, 17, 24, 0.7) 100%);
+    backdrop-filter: blur(300px);
+    height: 900px;
+    width: 100%;
+
+    .nav-flex-container{
+        display: flex;
+        justify-content: space-between;
+
+        .item-nav-1 {
+            flex: 50%;
+            margin-top: 24px;
+        }
+        .item-nav-2 {
+            flex: 50%;
+            ul {
+                display: flex;
+                justify-content: space-around; 
+                margin-top: 38px;
+
+                li {
+                    list-style-type: none;
+                    .first-a {
+                        color: green;                    
+                    }
+    
+                    .last-a {
+                        height: 48px;
+                        background: #43BA7F;
+                        border-radius: 24px;
+                        padding: 15px 32px;
+                    }
+                    a {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }  
+            }
+        }
+    }
+
+    .section-1 {
+        margin-top: 134px;
+        background-image: url('../home/homeimages/Ellipse 19.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        
+        p {
+            font-size: 96px;
+            line-height: 120px;
+            text-align: center;
+            color: #fff;
+           span {
+            color: #FF8145;
+           }
+        }
+        .img-place {
+            position: relative;
+            height: 227px;
+            
+            img {
+                position: absolute;
+                left:15%;
+                top: 63px;
+             }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+   .nav-flex-container {
+        display: none !important;
+   }
+
+    .nav-container {
+        height: 534px;
+
+        .nav-flex-container-2 {
+            display: flex;
+
+
+            .item-nav-3 {
+                flex: 50%;
+                width: 114px;
+                margin-top: 20px;
+            }
+
+            .item-nav-4 {
+                margin-top: 16px;
+                flex: 50%;
+                display: flex;
+                justify-content: end;
+                gap: 10px;
+
+                .item-nav-4-1 {
+
+                    ul {
+                        margin-top: 16px;
+
+                        li {
+                            list-style-type: none;
+                           
+                            a {
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #FFFFFF;
+                                text-decoration: none;
+                                width: 112px;
+                                height: 40px;
+                                background: #43BA7F;
+                                border-radius: 24px;
+                                padding: 12px 28px;
+                            }
+                        } 
+                    }
+                }
+
+                .item-nav-4-2 {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        .section-1 {
+            margin-top: 111px;
+            background-position: top 43% right 8%;
+    
+            p {
+                font-size: 34px !important;
+                line-height: 48px !important;
+                
+            }
+            .img-place {
+
+                img {
+                    width: 302px;
+                    height: 219px;
+                    top: 117px;
+                    left:33px !important;
+                }
+            }
+        }
+    }
+}
+// navbar ends

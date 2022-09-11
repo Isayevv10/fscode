@@ -1,0 +1,125 @@
+
+// doing job starts
+.doing-container {
+    color: #fff;
+    background-color: #0D1118;
+    border: 1px solid #0D1118;
+
+    .doing-flex-container {
+        display: flex;
+        flex-direction: row;
+        margin: 60px 0;
+
+        .doing-1 {
+            flex: 50%;
+            .doing-1-content {
+                display: flex;
+                .content-1 {
+                    flex: 50%;
+                    position: relative;
+                    height: 350px;
+                    p {
+                        width: 227px;
+                        font-size: 24px;
+                        line-height: 30px;
+                        position: absolute;
+                        bottom: 7%;
+                        left: 50%;
+                        background: none;
+                        transform-origin: 0 0;
+                        transform: rotate(-90deg);
+                    }
+                }
+                .content-2 {
+                    flex: 50%;
+                }
+            }
+        }
+
+        .doing-2 {
+            flex: 50%;
+            padding-top: 50px;
+
+            .about-content {
+                width: 485px;
+                font-size: 16px;
+                margin: 40px 0 64px 0;
+            }
+
+            .doing-2-content {
+                display: flex;
+                p {
+                    font-size: 20px;
+                    color: #6E7581;
+                    margin: 0;
+                }
+                small {
+                    font-size: 14px;
+                    color: #6E7581;
+                }
+                div:nth-of-type(1) {
+                    width: 64px;
+                    height: 64px;
+                    background-image: url('../home/homeimages/Ellipse\ 21.png');
+                    background-size: cover;
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+.doing-flex-container-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+
+
+    .doing-flex-container {
+        display: none !important;
+    }
+
+    .doing-flex-container-2 {
+        display: block;
+        .doing-caption {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .res-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 64px;
+        }
+        .about-content {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 48px 0 40px 0;
+        }
+
+        .doing-2-content {
+            display: flex;
+            color: #6E7581;
+            margin-bottom: 48px;
+
+                p {
+                    margin: 0;
+                    font-size: 20px;
+                }
+                small {
+                    font-size: 16px;
+                }
+            div:nth-of-type(1) {
+                width: 64px;
+                height: 64px;
+                background-image: url('../home/homeimages/Ellipse 21.png');
+                background-size: cover;
+                margin-right: 16px;
+            }
+        }
+    }
+}    
+// doing job ends
